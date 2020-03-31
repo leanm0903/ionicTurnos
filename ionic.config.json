@@ -1,0 +1,7 @@
+{
+  "name": "AppPelu",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
