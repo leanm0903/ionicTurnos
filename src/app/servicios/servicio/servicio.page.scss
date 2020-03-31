@@ -1,0 +1,32 @@
+ion-content{
+    --background:url(../../../assets/fondo.jpg)  repeat;
+    }
+
+.thumbnail{
+    font-family: 'Shadows Into Light', cursive!important;
+    letter-spacing: 3px;
+    text-overflow: none;
+}
+ion-item{
+    border-radius: 20px 0px 20px 0px;
+    // --background: rgba(255, 255, 255, 0.3);
+    // color: white;
+    margin: 23px 10px 23px 10px;
+    font-size: 5vw;
+    font-family: 'Shadows Into Light', cursive!important;
+    --min-height: 100px;
+    --border-style:none;
+
+
+}
+ion-card{
+color: blue($color: #000000);
+}
+
+p{
+    color: rgb(160, 154, 154)
+}
+ion-card-title{
+font-size: 15px;
+color: black;
+}

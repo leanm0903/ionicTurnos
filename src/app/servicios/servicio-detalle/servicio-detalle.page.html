@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>servicio-detalle</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Item Dividers in a List -->
+  <ion-list class="ion-margin" type="md">
+    <ion-item-divider>
+      <ion-label>
+        Clasico Plus
+      </ion-label>
+    </ion-item-divider>
+    <ion-item-divider>
+      <ion-slides mode="ios" pager="ios" scrollbar="ios">
+        <ion-slide *ngFor="let item of card">
+        
+          <ion-card>
+           
+            <img src="../../assets/pelo1.jpg" style="width: 100%;"/>
+            
+          </ion-card>
+        </ion-slide>
+      </ion-slides>
+    </ion-item-divider>
+    <ion-item>
+        <ion-label>Lavado|Lavado|Peinado + Perfilado de barba</ion-label>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia assumenda cumque laboriosam esse modi et vel, iusto saepe ipsa doloremque, commodi aperiam alias officiis veniam quibusdam nemo iure sit! Quis.</p>
+    </ion-item>
+    <ion-item><ion-label>Precio</ion-label>
+      
+      <h1>$234</h1>
+    </ion-item>
+      <ion-button (click)="click()"  expand="block" fill="clear" shape="round">
+        Reservar
+      </ion-button>
+  </ion-list>
+
+</ion-content>

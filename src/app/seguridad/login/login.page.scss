@@ -1,0 +1,22 @@
+.fondo{
+    height: 100%;
+    margin: auto 0;
+}
+ 
+
+ion-content{
+--background:url(../../../assets/fondo.jpg)  repeat;
+}
+ion-item{
+    --background: rgba(8, 8,8, 0.1);
+    --border-color: rgba(8, 8,8, 0.1)}
+a{
+    color: white;
+
+}
+.minvh{
+    height: 75vh;
+}
+.ion-margin{
+    margin-top: 5vh;
+}

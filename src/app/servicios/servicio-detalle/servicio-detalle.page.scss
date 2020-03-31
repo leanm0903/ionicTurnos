@@ -1,0 +1,35 @@
+ion-content{
+    --background:url(../../../assets/fondo.jpg)  repeat;
+    }
+    div.scrollmenu {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+      }
+      
+      div.scrollmenu h1 {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+      }
+      .container {
+      
+        overflow: hidden; 
+        white-space: nowrap;}
+        .custom-popup{
+          margin: 0 auto;
+        }
+        .custom-popup  ion-list{
+          --padding-top:0px!important
+        }
+        ion-popover {
+          div.popover-content {
+              height: 80%!important;
+              right: 5% !important;
+              left: 5% !important;
+              top: 133px;
+           
+              
+        }}
