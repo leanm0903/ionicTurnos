@@ -1,16 +1,16 @@
-<ion-header>
+<ion-header mode="md">
   <ion-toolbar>
     <ion-title>servicio-detalle</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-spinner name="crescent" *ngIf="bandera" color="light" class="crescent"></ion-spinner>
   <!-- Item Dividers in a List -->
-  <ion-list class="ion-margin" type="md">
+  <ion-list class="ion-margin" type="md" *ngIf=!bandera>
     <ion-item-divider>
-      <ion-label>
-        Clasico Plus
+      <ion-label >
+        {{ServicioSeleccionado.nombre}}
       </ion-label>
     </ion-item-divider>
     <ion-item-divider>
@@ -26,12 +26,14 @@
       </ion-slides>
     </ion-item-divider>
     <ion-item>
-        <ion-label>Lavado|Lavado|Peinado + Perfilado de barba</ion-label>
+      <h3>{{ServicioSeleccionado.descripcion}}</h3>
+    </ion-item>
+    <ion-item>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia assumenda cumque laboriosam esse modi et vel, iusto saepe ipsa doloremque, commodi aperiam alias officiis veniam quibusdam nemo iure sit! Quis.</p>
     </ion-item>
     <ion-item><ion-label>Precio</ion-label>
       
-      <h1>$234</h1>
+      <h1>{{ServicioSeleccionado?.precio|currency}}</h1>
     </ion-item>
       <ion-button (click)="click()"  expand="block" fill="clear" shape="round">
         Reservar

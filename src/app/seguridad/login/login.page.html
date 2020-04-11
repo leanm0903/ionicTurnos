@@ -8,29 +8,30 @@
       </ion-col>
         
       
-  <div>
-    <ion-item >
-      <ion-label position="floating" color="light">Usuario/Email</ion-label>
-      <ion-input color="light"></ion-input>
-    </ion-item>
-    <ion-item >
-      <ion-label position="floating" color="light">Contraseña</ion-label>
-      <ion-input color="light" type=password></ion-input>
-    </ion-item>
-    <div class="ion-margin">
-      <ion-button expand="block" type="submit" class="ion-no-margin" color="light">Ingresar</ion-button>
-    </div>
-      <div >
-        <ion-row class="text-center" >
-          <ion-col size="12"><a href="http://">Registrarse</a></ion-col>
-          <ion-col size="12"></ion-col>
-          <ion-col size="12"><a href="http://">No podes iniciar sesion?</a></ion-col>
+
+    <ion-row class=" ion-margin-top"  >
+        <ion-col>
+            <ion-button (click)="onClick()" color="light" expand="full" fill="outline">
+              <ion-icon name="logo-facebook" slot="start"></ion-icon>              
+              iniciar Sesion con Facebook
+            </ion-button>
+        </ion-col>
+      <ion-col>
+          <ion-button routerLink="/servicio" color="light" expand="full" fill="outline" >
+            <ion-icon name="logo-google" slot="start"></ion-icon>              
+            iniciar Sesion con Google
+          </ion-button>
+      </ion-col>
+      <ion-row class="mx-auto" >
+        <ion-col size="12" class="text-center"><a href="http://">Registrarse</a></ion-col>
+        <ion-col size="12"></ion-col>
+        <ion-col size="12" class="text-center"><a href="http://">No podes iniciar sesion?</a></ion-col>
+      </ion-row>
+        
 
         </ion-row>
         
         
-      </div>
-  </div>
 </ion-col>
 </ion-row>
 </ion-content>

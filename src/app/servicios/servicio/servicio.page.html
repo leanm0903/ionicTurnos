@@ -1,10 +1,11 @@
-<ion-toolbar mode="md">
+<ion-toolbar mode="md" >
   <ion-buttons slot="end" >
       <ion-button color="dark">
         <ion-icon name="person-circle-sharp"></ion-icon> 
-        <ion-label>Leandro</ion-label>
+        <ion-label>{{clienteLogueado?.nombre}}</ion-label>
       </ion-button>
   </ion-buttons>
+  <h1 color="light"></h1>
         <ion-buttons slot="start">
           <ion-menu-button color="dark" auto-hide="false"></ion-menu-button>
         </ion-buttons>
@@ -13,7 +14,7 @@
 <ion-content>
   <ion-row>
    <ion-col size="12" size-xl="4" class="mx-auto">
-     <ion-card *ngFor="let servicio of servicios" [ngStyle]="{'background':servicio.estilo}">
+     <ion-card *ngFor="let servicio of Servicios; index as i" [ngStyle]="{'background':servicio.estilo}" [routerLink]="['/servicio-detalle',i]">
       <ion-card-header>
           <ion-card-title>{{servicio.nombre}}</ion-card-title>
 
@@ -26,7 +27,7 @@
           </ion-col>
           <ion-col size="4" class="text-right"> 
              <!-- <p class="text-right">  ${{servicio.precio}} </p> -->
-             <ion-icon name="arrow-forward-outline"></ion-icon>            
+             <ion-icon name="arrow-forward-outline" color="dark"></ion-icon>            
             </ion-col>
         </ion-row>
         </ion-card-content>
@@ -34,6 +35,5 @@
       </ion-card>
    </ion-col>
   </ion-row>
- 
 
 </ion-content>
